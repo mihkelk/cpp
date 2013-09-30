@@ -239,7 +239,7 @@ int main() {
 		//------------------------------------------------------------------------//
 
 		joonistamine(PORTRAIT, world, koordinaadid);
-
+//
 
 	};
 	return 0;

@@ -49,9 +49,9 @@ BOOL inscreen(int pz, int py, int px, int jsuurus, objekt* objekt, int *movey, i
 			{
 				//cout<<px;
 				refresh();
-				if(((*objekt).y <= py+jsuurus)&&((*objekt).y >= py-jsuurus)&&((*objekt).x <= px+jsuurus)&&((*objekt).x >= px-jsuurus))
+				if(((*objekt).y <= py+jsuurus-1)&&((*objekt).y >= py-jsuurus)&&((*objekt).x <= px+jsuurus-1)&&((*objekt).x >= px-jsuurus))
 				{
-					if (((*objekt).y) < py)
+					if (((*objekt).y) <= py)
 					{
 					*movey = jsuurus - (py  % ((*objekt).y));
 					//cout<<movey;
